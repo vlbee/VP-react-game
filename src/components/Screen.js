@@ -1,5 +1,7 @@
 import React from 'react';
 import Form from './Form';
+import Game from './Game';
+
 import { getUserData } from '../utils/getUserData';
 
 export default class Screen extends React.Component {
@@ -38,7 +40,11 @@ export default class Screen extends React.Component {
         </div>
       );
     } else {
-      return <h1>{this.state.avatar}</h1>;
+      return (
+        <div className="screen">
+          <Game />
+        </div>
+      );
     }
   }
 }
