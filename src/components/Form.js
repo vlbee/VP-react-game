@@ -1,11 +1,12 @@
 import React from 'react';
+import { getUserData } from '../utils/getUserData';
 
 export default class Form extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       input: '',
-      username: '',
+      name: '',
       avatar: ''
     };
   }
@@ -19,7 +20,12 @@ export default class Form extends React.Component {
     event.preventDefault();
     const data = [];
     // TODO Fetch Api call method
-    // getUserData();
+    getUserData(this.state.input).then(userData =>
+      this.setState({
+        name: userData.name || userData.login,
+        avatar: userData.avatar_url
+      })
+    );
   };
 
   render() {
