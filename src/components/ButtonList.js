@@ -10,8 +10,8 @@ export default class buttonList extends React.Component {
     ];
     return (
       <ul className="buttonList">
-        {buttons.map(btn => {
-          return <Button key={btn.type} {...btn} />;
+        {buttons.map((btn, i) => {
+          return <Button key={i} {...btn} />;
         })}
       </ul>
     );
