@@ -11,7 +11,7 @@ export default class Screen extends React.Component {
       input: '',
       name: '',
       avatar_url: '',
-      motimeter: ['💜', '💜', '💜', '💜', '💜']
+      motimeter: props.motimeter
     };
   }
 
