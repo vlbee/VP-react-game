@@ -10,7 +10,7 @@ export default class Screen extends React.Component {
     this.state = {
       input: '',
       name: '',
-      avatar: ''
+      avatar_url: ''
     };
   }
 
@@ -21,15 +21,16 @@ export default class Screen extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
+
     getUserData(this.state.input).then(userData =>
       this.setState({
         name: userData.name || userData.login,
-        avatar: userData.avatar_url
+        avatar_url: userData.avatar_url
       })
     );
   };
   render() {
-    if (!this.state.name || !this.state.avatar) {
+    if (!this.state.name || !this.state.avatar_url) {
       return (
         <div className="screen">
           <Form
@@ -42,7 +43,7 @@ export default class Screen extends React.Component {
     } else {
       return (
         <div className="screen">
-          <Game />
+          <Game name={this.state.name} avatar_url={this.state.avatar_url} />
         </div>
       );
     }
