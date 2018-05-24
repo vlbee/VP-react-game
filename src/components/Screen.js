@@ -11,7 +11,7 @@ export default class Screen extends React.Component {
       input: '',
       name: '',
       avatar_url: '',
-      motimeter: 5
+      motimeter: ['💜', '💜', '💜', '💜', '💜']
     };
   }
 
@@ -26,8 +26,7 @@ export default class Screen extends React.Component {
     getUserData(this.state.input).then(userData =>
       this.setState({
         name: userData.name || userData.login,
-        avatar_url: userData.avatar_url,
-        motimeter: ['💜', '💜', '💜', '💜', '💜']
+        avatar_url: userData.avatar_url
       })
     );
   };
