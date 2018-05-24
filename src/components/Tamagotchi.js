@@ -3,11 +3,27 @@ import Screen from './Screen';
 import ButtonList from './ButtonList';
 
 export default class Tamagotchi extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      motimeter: ['💜', '💜', '💜', '💜', '💜']
+    };
+  }
+  handleClick = event => {
+    const remotivation = new Array(parseInt(event.target.value)).fill('💜');
+
+    this.setState(prevState => {
+      const newMotimeter = [...prevState.motimeter, ...remotivation];
+
+      return { motimeter: newMotimeter };
+    });
+    console.log('MOTIMETER', this.state.motimeter);
+  };
   render() {
     return (
       <section className="tamagotchi">
-        <Screen />
-        <ButtonList />
+        <Screen motimeter={this.state.motimeter} />
+        <ButtonList handleClick={this.handleClick} />
       </section>
     );
   }

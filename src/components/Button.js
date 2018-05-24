@@ -1,11 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Button = ({ type, value }) => {
+const Button = ({ type, value, handleClick }) => {
   return (
     <li className="button">
-      <data value={value}>{type}</data>
+      <button onClick={handleClick} value={value}>
+        {type}
+      </button>
     </li>
   );
+};
+
+Button.propTypes = {
+  type: PropTypes.string,
+  value: PropTypes.number,
+  handleClick: PropTypes.func
 };
 
 export default Button;
