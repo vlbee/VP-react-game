@@ -31,6 +31,7 @@ export default class Screen extends React.Component {
       })
     );
   };
+
   render() {
     if (!this.state.name || !this.state.avatar_url) {
       return (
