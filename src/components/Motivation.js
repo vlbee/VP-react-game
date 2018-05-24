@@ -1,12 +1,10 @@
 import React from 'react';
-// import { setTimeout, setInterval } from 'timers';
-// import { demotivator } from '../utils/demotivate';
 
 export default class Motivation extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      duration: 2000,
+      duration: 10000 - props.index * 2000,
       visible: true
     };
   }

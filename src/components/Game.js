@@ -23,7 +23,7 @@ export default class Game extends React.Component {
           <ul />
           <ul>
             {motimeter.map((heart, i) => {
-              return <Motivation key={i} {...heart} />;
+              return <Motivation key={i} index={i} {...heart} />;
             })}
           </ul>
         </div>
