@@ -1,14 +1,17 @@
 import React from 'react';
+import Motivation from './Motivation';
+// import propTypes from 'prop-types';
 
-const Motivation = ({ key }) => {
-  return <li className="motivation">💜</li>;
-};
+// Game.propTypes = {
+//   name: propTypes.string,
+//   avatar_url: propTypes.string,
+//   motimeter: propTypes.array
+// };
 
 export default class Game extends React.Component {
   constructor(props) {
     super(props);
   }
-
   render() {
     const { name, avatar_url, motimeter } = this.props;
     return (
