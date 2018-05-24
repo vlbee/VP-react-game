@@ -1,8 +1,8 @@
 import React from 'react';
 import Form from './Form';
 import Game from './Game';
-
 import { getUserData } from '../utils/getUserData';
+import './css/screen.css';
 
 export default class Screen extends React.Component {
   constructor(props) {

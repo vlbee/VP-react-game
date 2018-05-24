@@ -1,0 +1,15 @@
+.tamagotchi {
+  background-color: indigo;
+  color: ghostwhite;
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 80%;
+  max-width: 30rem;
+  min-width: 18rem;
+  border-radius: 50% 50% 50% 50% / 60% 60% 45% 45%;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+}

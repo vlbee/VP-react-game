@@ -1,12 +1,13 @@
 import React from 'react';
 import Screen from './Screen';
 import ButtonList from './ButtonList';
+import './css/tamagotchi.css';
 
 export default class Tamagotchi extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      motimeter: ['💜', '💜', '💜', '💜', '💜']
+      motimeter: ['💜', '💜', '💜', '💜', '💜', '💜', '💜']
     };
   }
   handleClick = event => {
@@ -21,10 +22,10 @@ export default class Tamagotchi extends React.Component {
   };
   render() {
     return (
-      <section className="tamagotchi">
+      <main className="tamagotchi">
         <Screen motimeter={this.state.motimeter} />
         <ButtonList handleClick={this.handleClick} />
-      </section>
+      </main>
     );
   }
 }
