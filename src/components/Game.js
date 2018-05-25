@@ -23,7 +23,7 @@ class Game extends React.Component {
           src={
             level === 0
               ? 'https://twemoji.maxcdn.com/2/72x72/1f525.png'
-              : { avatar_url }
+              : avatar_url
           }
         />
         <div className="game__motivation">
