@@ -2,8 +2,9 @@ import React from 'react';
 import Screen from './Screen';
 import ButtonList from './ButtonList';
 import './css/tamagotchi.css';
+import ErrorBoundary from './ErrorBoundary';
 
-export default class Tamagotchi extends React.Component {
+class Tamagotchi extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -29,3 +30,5 @@ export default class Tamagotchi extends React.Component {
     );
   }
 }
+
+export default ErrorBoundary(Tamagotchi);

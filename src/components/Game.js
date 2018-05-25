@@ -1,15 +1,9 @@
 import React from 'react';
 import Motivation from './Motivation';
 import './css/game.css';
-// import propTypes from 'prop-types';
+import ErrorBoundary from './ErrorBoundary';
 
-// Game.propTypes = {
-//   name: propTypes.string,
-//   avatar_url: propTypes.string,
-//   motimeter: propTypes.array
-// };
-
-export default class Game extends React.Component {
+class Game extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -66,3 +60,5 @@ export default class Game extends React.Component {
     }
   }
 }
+
+export default ErrorBoundary(Game);

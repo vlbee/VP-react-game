@@ -3,8 +3,9 @@ import Form from './Form';
 import Game from './Game';
 import { getUserData } from '../utils/getUserData';
 import './css/screen.css';
+import ErrorBoundary from './ErrorBoundary';
 
-export default class Screen extends React.Component {
+class Screen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -55,3 +56,5 @@ export default class Screen extends React.Component {
     }
   }
 }
+
+export default ErrorBoundary(Screen);

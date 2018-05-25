@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/form.css';
+import ErrorBoundary from './ErrorBoundary';
 
 const Form = ({ handleChange, handleSubmit, state }) => {
   return (
@@ -21,4 +22,4 @@ const Form = ({ handleChange, handleSubmit, state }) => {
   );
 };
 
-export default Form;
+export default ErrorBoundary(Form);
