@@ -13,3 +13,20 @@ li {
   list-style-type: none;
   display: inline;
 }
+
+.screen {
+  text-align: center;
+  background-color: hsla(0, 0%, 50%, 1);
+  color: hsl(0, 0%, 20%);
+  font-weight: bold;
+  margin: 7rem auto;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  min-height: 14rem;
+  width: 15rem;
+  border-radius: 5px;
+  border-right: 3px solid hsla(0, 0%, 60%, 1);
+  border-bottom: 3px solid hsla(0, 0%, 60%, 1);
+  border-left: 4px solid hsla(0, 0%, 20%, 1);
+  border-top: 4px solid hsla(0, 0%, 20%, 1);
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import './css/form.css';
 import ErrorBoundary from './ErrorBoundary';
 
-const Form = ({ handleChange, handleSubmit, state }) => {
+const Form = ({ handleChange, handleSubmit, input }) => {
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="username">
@@ -12,7 +12,7 @@ const Form = ({ handleChange, handleSubmit, state }) => {
       <input
         type="text"
         id="username"
-        value={state.input}
+        value={input}
         onChange={handleChange}
         autoComplete="off"
       >
