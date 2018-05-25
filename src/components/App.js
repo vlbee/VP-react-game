@@ -4,15 +4,13 @@ import Tamagotchi from './Tamagotchi';
 import './css/app.css';
 import ErrorBoundary from './ErrorBoundary';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className="app">
-        <Title />
-        <Tamagotchi />
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <div className="app">
+      <Title />
+      <Tamagotchi />
+    </div>
+  );
+};
 
 export default ErrorBoundary(App);
