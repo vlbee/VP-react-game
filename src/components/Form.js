@@ -14,7 +14,7 @@ const Form = ({ handleChange, handleSubmit, state }) => {
         id="username"
         value={state.input}
         onChange={handleChange}
-        autocomplete="off"
+        autoComplete="off"
       >
         {/* <span className="blinking_cursor">|</span> */}
       </input>
