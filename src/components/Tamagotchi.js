@@ -36,6 +36,7 @@ class Tamagotchi extends React.Component {
 
   /* BUTTONS */
   handleClick = event => {
+    event.preventDefault();
     const remotivation = new Array(parseInt(event.target.value)).fill('💜');
 
     this.setState(prevState => {
@@ -51,7 +52,7 @@ class Tamagotchi extends React.Component {
   /* DEMOTIVATION */
   startDemotivation = () => {
     const motimeter = this.state.motimeter;
-    console.log(motimeter);
+
     this.timer = setInterval(
       () =>
         this.setState(prevState => {
