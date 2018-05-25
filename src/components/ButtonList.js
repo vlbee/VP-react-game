@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './Button';
 import './css/buttonList.css';
 
-export default class buttonList extends React.Component {
+export default class ButtonList extends React.Component {
   constructor(props) {
     super(props);
   }

@@ -1,5 +1,4 @@
 import React from 'react';
-import './css/tamagotchi.css';
 
 export default class Title extends React.Component {
   render() {

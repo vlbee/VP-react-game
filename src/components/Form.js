@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/form.css';
 
-const Form = ({ handleChange, handleSubmit, state }) => {
+const Form = ({ handleChange, handleSubmit, input }) => {
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="username">
@@ -11,9 +11,9 @@ const Form = ({ handleChange, handleSubmit, state }) => {
       <input
         type="text"
         id="username"
-        value={state.input}
+        value={input}
         onChange={handleChange}
-        autocomplete="off"
+        autoComplete="off"
       >
         {/* <span className="blinking_cursor">|</span> */}
       </input>
