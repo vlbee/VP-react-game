@@ -32,23 +32,20 @@
   margin: 0;
 }
 
-/* .motivation__level:last-child {
-  color: transparent;
-  text-shadow: 0 0 0 hsla(0, 0%, 20%, 1);
-  animation: blink 1s step-end infinite;
-} */
-/* 
-@keyframes blink {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
-} */
-
 .motivation {
   color: transparent;
   text-shadow: 0 0 0 hsla(0, 0%, 20%, 1);
   margin-top: 0.3rem;
+}
+
+.motivation:last-child {
+  color: transparent;
+  text-shadow: 0 0 0 hsla(0, 0%, 20%, 1);
+  animation: blinker 500ms ease-in-out infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
