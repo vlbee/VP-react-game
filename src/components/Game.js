@@ -1,8 +1,9 @@
 import React from 'react';
 import Motivation from './Motivation';
 import './css/game.css';
+import ErrorBoundary from './ErrorBoundary';
 
-export default class Game extends React.Component {
+class Game extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -43,3 +44,5 @@ export default class Game extends React.Component {
     );
   }
 }
+
+export default ErrorBoundary(Game);

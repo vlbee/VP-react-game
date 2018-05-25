@@ -4,9 +4,9 @@ import Game from './Game';
 import ButtonList from './ButtonList';
 import { getUserData } from '../utils/getUserData';
 import './css/tamagotchi.css';
-import { start } from 'repl';
+import ErrorBoundary from './ErrorBoundary';
 
-export default class Tamagotchi extends React.Component {
+class Tamagotchi extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -95,3 +95,5 @@ export default class Tamagotchi extends React.Component {
     );
   }
 }
+
+export default ErrorBoundary(Tamagotchi);

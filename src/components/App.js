@@ -2,8 +2,9 @@ import React from 'react';
 import Title from './Title';
 import Tamagotchi from './Tamagotchi';
 import './css/app.css';
+import ErrorBoundary from './ErrorBoundary';
 
-export default class App extends React.Component {
+class App extends React.Component {
   render() {
     return (
       <div className="app">
@@ -13,3 +14,5 @@ export default class App extends React.Component {
     );
   }
 }
+
+export default ErrorBoundary(App);

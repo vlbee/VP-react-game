@@ -1,7 +1,10 @@
 import React from 'react';
+import ErrorBoundary from './ErrorBoundary';
 
-export default class Motivation extends React.Component {
+class Motivation extends React.Component {
   render() {
     return <li className="motivation">💜</li>;
   }
 }
+
+export default ErrorBoundary(Motivation);

@@ -1,6 +1,8 @@
 import React from 'react';
+import './css/tamagotchi.css';
+import ErrorBoundary from './ErrorBoundary';
 
-export default class Title extends React.Component {
+class Title extends React.Component {
   render() {
     return (
       <header className="title">
@@ -12,3 +14,5 @@ export default class Title extends React.Component {
     );
   }
 }
+
+export default ErrorBoundary(Title);

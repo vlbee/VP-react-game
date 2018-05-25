@@ -1,8 +1,9 @@
 import React from 'react';
 import Button from './Button';
 import './css/buttonList.css';
+import ErrorBoundary from './ErrorBoundary';
 
-export default class ButtonList extends React.Component {
+class ButtonList extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -23,3 +24,5 @@ export default class ButtonList extends React.Component {
     );
   }
 }
+
+export default ErrorBoundary(ButtonList);
