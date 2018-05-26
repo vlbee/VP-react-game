@@ -21,7 +21,7 @@ class Game extends React.Component {
           className="game__avatar"
           src={
             level === 0
-              ? 'https://twemoji.maxcdn.com/2/72x72/1f525.png'
+              ? 'https://twemoji.maxcdn.com/2/72x72/1f525.png' // Fire Emoji courtesy of Twitter: https://github.com/twitter/twemoji
               : avatar_url
           }
         />
