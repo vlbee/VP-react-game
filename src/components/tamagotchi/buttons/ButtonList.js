@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from './Button';
 import './buttonList.css';
-import ErrorBoundary from '../../ErrorBoundary';
 import PropTypes from 'prop-types';
 
 class ButtonList extends React.Component {
@@ -26,4 +25,4 @@ class ButtonList extends React.Component {
   }
 }
 
-export default ErrorBoundary(ButtonList);
+export default ButtonList;

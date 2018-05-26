@@ -20,7 +20,11 @@ button {
 }
 
 button:focus {
-  outline: 0;
+  outline-color: gold;
+}
+
+button:hover {
+  outline: none;
 }
 
 button:active {

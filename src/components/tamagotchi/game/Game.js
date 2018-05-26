@@ -1,7 +1,6 @@
 import React from 'react';
 import Motivation from './Motivation';
 import './game.css';
-import ErrorBoundary from '../../ErrorBoundary';
 
 class Game extends React.Component {
   constructor(props) {
@@ -45,4 +44,4 @@ class Game extends React.Component {
   }
 }
 
-export default ErrorBoundary(Game);
+export default Game;

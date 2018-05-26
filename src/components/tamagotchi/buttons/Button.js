@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ErrorBoundary from '../../ErrorBoundary';
 
 const Button = ({ type, value, handleClick }) => {
   return (
@@ -18,4 +17,4 @@ Button.propTypes = {
   handleClick: PropTypes.func
 };
 
-export default ErrorBoundary(Button);
+export default Button;
