@@ -16,11 +16,11 @@ class ButtonList extends React.Component {
     const { handleClick } = this.props;
 
     return (
-      <ul className="buttonList">
+      <section className="buttonList">
         {ButtonList.map((btn, i) => {
           return <Button handleClick={handleClick} key={i} {...btn} />;
         })}
-      </ul>
+      </section>
     );
   }
 }

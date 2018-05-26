@@ -3,11 +3,9 @@ import PropTypes from 'prop-types';
 
 const Button = ({ type, value, handleClick }) => {
   return (
-    <li className="button">
-      <button onClick={handleClick} value={value}>
-        {type}
-      </button>
-    </li>
+    <button onClick={handleClick} value={value}>
+      {type}
+    </button>
   );
 };
 

@@ -44,7 +44,6 @@ class Tamagotchi extends React.Component {
         0,
         7
       );
-      console.log('T', this.state.motimeter);
       return { motimeter: newMotimeter };
     });
   };

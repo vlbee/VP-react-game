@@ -29,8 +29,16 @@ button:hover {
 
 button:active {
   cursor: pointer;
+  /* To delete transform: on bug fix */
+  transform: translate(2px, 2px);
   border-left: 2px solid hsla(279, 50%, 50%, 1);
   border-top: 2px solid hsla(279, 50%, 50%, 1);
   border-right: 2px solid hsla(279, 50%, 100%, 1);
   border-bottom: 2px solid hsla(279, 50%, 100%, 1);
 }
+
+/* Adding a span to the button throws an array.length error to the onClick handler function, due to the span becoming the target of the onClick Event, not the button itself */
+/* button:active > span {
+  display: inline-block;
+  transform: translate(2px, 2px);
+} */
