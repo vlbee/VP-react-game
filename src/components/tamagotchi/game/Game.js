@@ -1,7 +1,7 @@
 import React from 'react';
 import Motivation from './Motivation';
-import './css/game.css';
-import ErrorBoundary from './ErrorBoundary';
+import './game.css';
+import ErrorBoundary from '../../ErrorBoundary';
 
 class Game extends React.Component {
   constructor(props) {

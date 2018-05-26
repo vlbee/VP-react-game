@@ -1,6 +1,6 @@
 import React from 'react';
-import './css/form.css';
-import ErrorBoundary from './ErrorBoundary';
+import './form.css';
+import ErrorBoundary from '../../ErrorBoundary';
 
 const Form = ({ handleChange, handleSubmit, input }) => {
   return (

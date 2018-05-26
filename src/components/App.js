@@ -1,18 +1,24 @@
 import React from 'react';
-import Title from './Title';
-import Tamagotchi from './Tamagotchi';
-import Legend from './Legend';
-import './css/app.css';
-import ErrorBoundary from './ErrorBoundary';
+import Tamagotchi from './tamagotchi/Tamagotchi';
+import './app.css';
 
-const App = () => {
-  return (
-    <div className="app">
-      <Title />
-      <Tamagotchi />
-      <Legend />
-    </div>
-  );
-};
+const text = `{ 💜: 'complement my code', 🐶: 'send me an emoji', ⭐: 'star one of my repos' }`;
 
-export default ErrorBoundary(App);
+export default class App extends React.Component {
+  render() {
+    return (
+      <div className="app">
+        <header>
+          <h1 className="header__title">GitHub Tamagotchi</h1>
+          <p className="header__instructions">
+            Keep my motivation levels up by sending me emojis!
+          </p>
+          <p>
+            const <strong>legend</strong> = {text}
+          </p>
+        </header>
+        <Tamagotchi />
+      </div>
+    );
+  }
+}

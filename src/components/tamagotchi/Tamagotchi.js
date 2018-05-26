@@ -1,10 +1,10 @@
 import React from 'react';
-import Form from './Form';
-import Game from './Game';
-import ButtonList from './ButtonList';
-import { getUserData } from '../utils/getUserData';
-import './css/tamagotchi.css';
-import ErrorBoundary from './ErrorBoundary';
+import Form from './form/Form';
+import Game from './game/Game';
+import ButtonList from './buttons/ButtonList';
+import { getUserData } from '../../utils/getUserData';
+import './tamagotchi.css';
+import ErrorBoundary from '../ErrorBoundary';
 
 class Tamagotchi extends React.Component {
   constructor(props) {
@@ -34,7 +34,7 @@ class Tamagotchi extends React.Component {
     );
   };
 
-  /* BUTTONS */
+  /* EMOJI BUTTONS */
   handleClick = event => {
     event.preventDefault();
     const remotivation = new Array(parseInt(event.target.value)).fill('💜');
@@ -49,7 +49,7 @@ class Tamagotchi extends React.Component {
     });
   };
 
-  /* DEMOTIVATION */
+  /* DEMOTIVATION COUNTDOWN */
   startDemotivation = () => {
     const motimeter = this.state.motimeter;
 

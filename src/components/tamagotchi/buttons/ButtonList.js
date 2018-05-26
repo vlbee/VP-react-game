@@ -1,14 +1,15 @@
 import React from 'react';
 import Button from './Button';
-import './css/buttonList.css';
-import ErrorBoundary from './ErrorBoundary';
+import './buttonList.css';
+import ErrorBoundary from '../../ErrorBoundary';
+import PropTypes from 'prop-types';
 
 class ButtonList extends React.Component {
   constructor(props) {
     super(props);
   }
   render() {
-    const buttons = [
+    const ButtonList = [
       { type: '💜', value: 3 },
       { type: '🐶', value: 2 },
       { type: '⭐', value: 1 }
@@ -17,7 +18,7 @@ class ButtonList extends React.Component {
 
     return (
       <ul className="buttonList">
-        {buttons.map((btn, i) => {
+        {ButtonList.map((btn, i) => {
           return <Button handleClick={handleClick} key={i} {...btn} />;
         })}
       </ul>

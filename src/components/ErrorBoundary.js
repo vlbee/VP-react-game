@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default WrappedComponent => {
   return class ErrorBoundary extends React.Component {
@@ -15,7 +15,7 @@ export default WrappedComponent => {
     render() {
       if (this.state.hasError) {
         return (
-          <div {...this.props} {...this.state} style={{ padding: "1rem" }}>
+          <div {...this.props} {...this.state} style={{ padding: '1rem' }}>
             <h2>Something went wrong!</h2>
             <br />
             <span>Refresh and try again or check your connection</span>
