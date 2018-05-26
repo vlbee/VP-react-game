@@ -13,7 +13,6 @@ const Legend = () => {
         const <strong>legend</strong> = {text}
       </p>
       <br />
-      <footer>&copy; vlbee &amp; parissai</footer>
     </React.Fragment>
   );
 };
