@@ -4,6 +4,8 @@ A single-page web app built to learn React.js
 
 Take care of your tamagotchi here:
 
+What is a Tamagotchi? https://en.wikipedia.org/wiki/Tamagotchi
+
 ### Instructions
 
 Enter the username of your favorite Github contributor on the screen to load up the Tamagotchi.
