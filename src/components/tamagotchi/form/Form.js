@@ -4,9 +4,7 @@ import React from 'react';
 const Form = ({ handleChange, handleSubmit, input }) => {
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="username">
-        Enter your <br /> Github username:
-      </label>
+      <label htmlFor="username">Enter your Github username:</label>
       <br />
       <input
         type="text"
@@ -14,6 +12,7 @@ const Form = ({ handleChange, handleSubmit, input }) => {
         value={input}
         onChange={handleChange}
         autoComplete="off"
+        data-testid="form"
       />
     </form>
   );

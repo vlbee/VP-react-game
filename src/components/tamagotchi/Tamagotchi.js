@@ -51,7 +51,7 @@ class Tamagotchi extends React.Component {
   /* DEMOTIVATION COUNTDOWN */
   startDemotivation = () => {
     const motimeter = this.state.motimeter;
-    console.log(motimeter);
+
     this.timer = setInterval(
       () =>
         this.setState(prevState => {

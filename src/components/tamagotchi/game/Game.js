@@ -25,7 +25,7 @@ class Game extends React.Component {
               : avatar_url
           }
         />
-        <div className="game__motivation">
+        <div className="game__motivation" data-testid="burn_out">
           {level === 0 ? (
             <span className="game__motivation--key">{name} has burnt out!</span>
           ) : (
