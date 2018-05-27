@@ -2,7 +2,7 @@ import React from 'react';
 import Tamagotchi from './tamagotchi/Tamagotchi';
 import './app.css';
 
-const text = `{ 💜: 'complement my code', 🐶: 'send me an emoji', ⭐: 'star one of my repos' }`;
+const text = `{ 💜: 'compliment my code', 🐶: 'send me an emoji', ⭐: 'star one of my repos' }`;
 
 export default class App extends React.Component {
   render() {
