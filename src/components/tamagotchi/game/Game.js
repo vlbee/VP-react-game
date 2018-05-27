@@ -1,6 +1,6 @@
 import React from 'react';
 import Motivation from './Motivation';
-// import './game.css';
+import './game.css';
 
 class Game extends React.Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import Tamagotchi from './tamagotchi/Tamagotchi';
-// import './app.css';
+import './app.css';
 
 const text = `{ 💜: 'complement my code', 🐶: 'send me an emoji', ⭐: 'star one of my repos' }`;
 

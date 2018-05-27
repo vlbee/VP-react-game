@@ -4,7 +4,7 @@ import Game from './game/Game';
 import ButtonList from './buttons/ButtonList';
 import { getUserData } from '../../utils/getUserData';
 import ErrorBoundary from '../ErrorBoundary';
-// import './tamagotchi.css';
+import './tamagotchi.css';
 
 class Tamagotchi extends React.Component {
   constructor(props) {

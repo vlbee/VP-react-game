@@ -2,9 +2,9 @@
 
 A single-page web app built to learn React.js
 
-Take care of your tamagotchi here:
+Take care of your tamagotchi here: https://githubtamagotchi.netlify.com/
 
-What is a Tamagotchi? https://en.wikipedia.org/wiki/Tamagotchi
+What is a tamagotchi? https://en.wikipedia.org/wiki/Tamagotchi
 
 ### Instructions
 
@@ -17,7 +17,7 @@ Once loaded, your Github Tamagotchi will start to loose motivation to keep codin
 * **React.js**
 * **JSX**
 * **Parcel** for script bundling
-* **Jest** for testing
+* **Jest** and for testing
 * Github API
 
 ### Goals
@@ -28,8 +28,8 @@ Once loaded, your Github Tamagotchi will start to loose motivation to keep codin
 
 ### Stretch Goals
 
-* Use localstorage to save the sate so your Tamagotchi is always there waiting for you.
-* Responsive design -> Mobile ready
-* Add multiple Tamagotchi to look after.
+* [ ] Use localstorage to save the sate so your Tamagotchi is always there waiting for you.
+* [ ] Responsive design -> Mobile ready
+* [ ] Add multiple Tamagotchi to look after.
 
-**Attributions:** Fire TwEmoji courtesy of Twitter: https://github.com/twitter/twemoji
+**Attributions:** Fire Twemoji courtesy of Twitter: https://github.com/twitter/twemoji
