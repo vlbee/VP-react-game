@@ -23,7 +23,7 @@ Once loaded, your Github Tamagotchi will start to loose motivation to keep codin
 ### Goals
 
 * learn React.js & JSX
-* learn testing with Jest (Integration tests pending...)
+* learn integration testing with Jest
 * Practice writing modular code and JS classes
 
 ### Stretch Goals
