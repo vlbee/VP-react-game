@@ -17,7 +17,7 @@ Once loaded, your Github Tamagotchi will start to loose motivation to keep codin
 * **React.js**
 * **JSX**
 * **Parcel** for script bundling
-* **Jest** and for testing
+* **Jest** for testing
 * Github API
 
 ### Goals
