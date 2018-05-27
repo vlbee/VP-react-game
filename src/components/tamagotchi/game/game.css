@@ -17,6 +17,12 @@
   width: 100%;
 }
 
+/* removes bullets from motivation meter list */
+li {
+  list-style-type: none;
+  display: inline;
+}
+
 .motivation__key {
   display: inline-block;
   font-size: 1rem;

@@ -3,8 +3,8 @@ import Form from './form/Form';
 import Game from './game/Game';
 import ButtonList from './buttons/ButtonList';
 import { getUserData } from '../../utils/getUserData';
-import './tamagotchi.css';
 import ErrorBoundary from '../ErrorBoundary';
+import './tamagotchi.css';
 
 class Tamagotchi extends React.Component {
   constructor(props) {
@@ -51,7 +51,7 @@ class Tamagotchi extends React.Component {
   /* DEMOTIVATION COUNTDOWN */
   startDemotivation = () => {
     const motimeter = this.state.motimeter;
-
+    console.log(motimeter);
     this.timer = setInterval(
       () =>
         this.setState(prevState => {
@@ -73,7 +73,8 @@ class Tamagotchi extends React.Component {
 
     return (
       <main className="tamagotchi">
-        <div className="screen">
+        <section className="screen">
+          <h2>Screen</h2>
           {!this.state.name || !this.state.avatar_url ? (
             <Form
               handleChange={this.handleChange}
@@ -89,7 +90,7 @@ class Tamagotchi extends React.Component {
               startDemotivation={this.startDemotivation}
             />
           )}
-        </div>
+        </section>
         <ButtonList handleClick={this.handleClick} />
       </main>
     );

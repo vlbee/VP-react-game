@@ -17,6 +17,7 @@ class ButtonList extends React.Component {
 
     return (
       <section className="buttonList">
+        <h2>Buttons</h2>
         {ButtonList.map((btn, i) => {
           return <Button handleClick={handleClick} key={i} {...btn} />;
         })}
