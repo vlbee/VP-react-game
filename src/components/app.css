@@ -13,3 +13,16 @@ body {
   align-items: center;
   margin: 0 auto;
 }
+
+@media (max-width: 599px) {
+  body {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .app {
+    flex-basis: 90%;
+  }
+}

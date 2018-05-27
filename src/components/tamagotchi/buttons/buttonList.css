@@ -7,6 +7,12 @@
   max-width: 15rem;
 }
 
+@media (max-width: 599px) {
+  .buttonList {
+    max-width: 50vw;
+  }
+}
+
 button {
   font-size: 2rem;
   background-color: hsla(279, 50%, 90%, 1);

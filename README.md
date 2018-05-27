@@ -29,7 +29,7 @@ Once loaded, your Github Tamagotchi will start to loose motivation to keep codin
 ### Stretch Goals
 
 * [ ] Use localstorage to save the sate so your Tamagotchi is always there waiting for you.
-* [ ] Responsive design -> Mobile ready
+* [x] Responsive design -> Mobile ready
 * [ ] Add multiple Tamagotchi to look after.
 
 **Attributions:** Fire Twemoji courtesy of Twitter: https://github.com/twitter/twemoji

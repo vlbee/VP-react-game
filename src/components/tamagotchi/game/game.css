@@ -53,3 +53,9 @@ li {
     opacity: 0;
   }
 }
+
+@media (max-width: 599px) {
+  .motivation {
+    font-size: 0.9rem;
+  }
+}

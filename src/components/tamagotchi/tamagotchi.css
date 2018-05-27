@@ -40,4 +40,27 @@ section h2 {
   border-top: 4px solid hsla(0, 0%, 20%, 1);
 }
 
+@media (max-width: 599px) {
+  .tamagotchi {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 90vw;
+  }
+  .screen {
+    margin: 7rem auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 50vmin;
+  }
+}
 
+@media (max-width: 399px) {
+  .tamagotchi {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 90vw;
+  }
+  .screen {
+    width: 55vmin;
+  }
+}
