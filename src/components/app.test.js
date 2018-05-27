@@ -2,18 +2,27 @@ import React from 'react';
 import App from './App';
 import { render } from 'react-testing-library';
 
-jest.mock('./app.css', () => jest.fn());
-
-test('Jest works ok', () => {
-  jest.fn();
-  expect(true).toBeTruthy();
-});
-
 describe('Test App', () => {
-  jest.fn();
+  const { container, getByLabelText, getByText } = render(<App />);
+  const tamagotchi = container.querySelector('main');
+  const form = getByLabelText('Enter your Github username:');
+  const heart = getByText('💜');
+  const emoji = getByText('🐶');
+  const star = getByText('⭐');
+
   test('displays Tamagotchi', () => {
-    const { container } = render(<Tamagotchi />);
-    const actual = container.querySelector('main');
-    expect(actual).toBeTruthy();
+    expect(tamagotchi).toBeTruthy();
+  });
+  test('displays Form in screen', () => {
+    expect(form).toBeTruthy();
+  });
+  test('displays heart button', () => {
+    expect(heart).toBeTruthy();
+  });
+  test('displays emoji button', () => {
+    expect(emoji).toBeTruthy();
+  });
+  test('displays star button', () => {
+    expect(star).toBeTruthy();
   });
 });

@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button';
 import PropTypes from 'prop-types';
-import './buttonList.css';
+// import './buttonList.css';
 
 class ButtonList extends React.Component {
   constructor(props) {
